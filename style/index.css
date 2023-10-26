@@ -6,13 +6,19 @@
 @font-face {
     font-family: Century Gothic;
     src: local("Century Gothic"), 
-     url('../fonts/beer\ money.ttf') format('truetype');
-     font-family: Days_One;
-     src: local("Days_One"), 
-     url('../fonts/Days_One/DaysOne-Regular.ttf');
-     font-family: Cuprum;
-     src: local("Cuprum"),
-     url('../fonts/Cuprum/Cuprum-VariableFont_wght.ttf')
+        url('../fonts/beer\ money.ttf') format('truetype');
+    font-family: Days_One;
+    src: local("Days_One"), 
+        url('../fonts/Days_One/DaysOne-Regular.ttf');
+    font-family: Cuprum;
+    src: local("Cuprum"),
+        url('../fonts/Cuprum/Cuprum-VariableFont_wght.ttf');
+    font-family: Tilda_sans;
+    src: local("Tilda_sans"),
+        url('../fonts/TildaSans-VF_TTF_Web/TildaSans-VF_TTF_Web/TildaSans-VF.ttf');
+    font-family: Mulish;
+    src: local("Mulish"),
+        url('../fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf')
 }
 
 
@@ -88,6 +94,7 @@
     margin: 20px 0px 0px 170px;
     min-width: none;
     gap: 10px;
+    font-family:Tilda_sans ;
 }
 
 .links-block1,
@@ -163,26 +170,60 @@
     position: relative;
     width: 496px;
     height: 116px;
-    top: 416px;
+    top: 137px;
     left: 76px;
-}
-
-.content__text p {
-    font-family:Tilda Sans ;
+    font-family:Tilda_sans;
     font-weight:300;
     font-size: 24px;
     line-height:28.94px;
+
+}
+
+.img__right {
+   position: relative;
+    float: right;
+    background-image: url("../assets//FabJet.png");
+    background-size: cover;
+    width: 1149px;
+    height: 858px;
+    top: -180px;
+    /* left: 1792px; */
+    Rotation: -180 deg
+}
+
+.content__title-bottom {
+    background-image: url("../assets//smoke-background-images.png");
+    background-size: cover;
+    max-width: 1694px;
+    height: 1204px;
+    top: 259px;
+    left: -69px;
 }
 
 .title__bottom-button {
     position: relative;
     width: 368px;
     height: 77px;
-    top: 592px;
-    left: 76px;
+    top: 248px;
+    left: -25px;
     border-radius: 39px;
     border: 3px black solid;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-family: Mulish;
 }
+
+.title__bottom-button p{
+    font-weight:700;
+    size:22px;
+    line-height:29.51px;
+    text-align:center;
+}
+
+
 
 @media screen and (min-width: 320px) {
 
