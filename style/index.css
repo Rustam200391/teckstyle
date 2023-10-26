@@ -1,0 +1,189 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Century Gothic;
+    src: local("Century Gothic"), 
+     url('../fonts/beer\ money.ttf') format('truetype');
+     font-family: Days_One;
+     src: local("Days_One"), 
+     url('../fonts/Days_One/DaysOne-Regular.ttf');
+     font-family: Cuprum;
+     src: local("Cuprum"),
+     url('../fonts/Cuprum/Cuprum-VariableFont_wght.ttf')
+}
+
+
+/* хедер */
+.header {
+    background-image: url("../assets/smoke-background-png-images-thumbnail-1649450008\ 2.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1694px;
+    height: 104px;
+    top: -848px;
+    left: -127px;
+    border-bottom: 2px solid #040404;
+}
+
+/* делаем черную полосу сниу хедера белой по краям */
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 642px;
+    left: 0%;
+    width: 2%;
+    height: 2px;
+    margin-left: 0%;
+    background: #fbf6f6;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    bottom: 642px;
+    right: 0%;
+    width: 2%;
+    height: 2px;
+    margin-right: 0%;
+    background: #fffefe;
+}
+
+/* содержимое хедера */
+.header__wrapper {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__wrapper-block1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 23px 50px 0px -60px;
+    gap: 5px;
+    min-width: none;
+}
+
+.block1__title-upper {
+    font-size: 1.8rem;
+    color: #efb462;
+}
+
+.block1__title-under {
+    font-family: Century Gothic;
+    font-weight: 400;
+}
+
+
+
+.header__links {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px 0px 170px;
+    min-width: none;
+    gap: 10px;
+}
+
+.links-block1,
+.links-block2,
+.links-block3,
+.links-block4 { 
+    margin: 20px 0 0 0;
+    
+}
+
+
+.social__media{
+    display: flex;
+    justify-content:center;
+    margin: 32px 0 0 170px;
+
+}
+
+.social__media-tg {
+    margin: 0 10px 0 80px;
+}
+
+.phone__number {
+    display: flex;
+    justify-content:center;
+    margin: 27px 0 0 15px;
+}
+
+.phone__number-digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 13px 20px 15px;
+}
+
+.phone__number-icon {
+    margin:13px 12px 7px 15px;
+}
+
+
+/* контент  */
+
+.main-content {
+    background-color: #F5F5F5;
+    /* min-width: 1694px; */
+    min-height: 1204px;
+}
+
+.content__title {
+    position: relative;
+    width: 777px;
+    height: 215px;
+    top: 201px;
+    left: 76px;
+}
+
+.content__title span {
+    font-family: Days_One;
+    font-weight: 400;
+    font-size: 49px;
+    line-height:54.68px;
+    color: #21A9E7;
+}
+
+.title-text, .title-text-p {
+    font-family: Cuprum; 
+    font-weight: 700;
+    font-Size: 49px;
+    line-height: 54.68px;
+}
+
+.content__text {
+    position: relative;
+    width: 496px;
+    height: 116px;
+    top: 416px;
+    left: 76px;
+}
+
+.content__text p {
+    font-family:Tilda Sans ;
+    font-weight:300;
+    font-size: 24px;
+    line-height:28.94px;
+}
+
+.title__bottom-button {
+    position: relative;
+    width: 368px;
+    height: 77px;
+    top: 592px;
+    left: 76px;
+    border-radius: 39px;
+    border: 3px black solid;
+}
+
+@media screen and (min-width: 320px) {
+
+}
