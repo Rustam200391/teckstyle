@@ -171,7 +171,7 @@
     width: 496px;
     height: 116px;
     top: 137px;
-    left: 76px;
+    left: -20px;
     font-family:Tilda_sans;
     font-weight:300;
     font-size: 24px;
@@ -224,6 +224,16 @@
 }
 
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background:#fbf6f6 ;
+}
+
+.footer__title {
+    flex-wrap: wrap;
+    text-align: center;
+}
 
 @media screen and (min-width: 320px) {
 
